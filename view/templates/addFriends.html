@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./../view/css/style.css">
+    <link rel="shortcut icon" href="./../view/media/icon.png" type="image/x-icon">
+    <title>{{friends}}</title>
+</head>
+<body>
+    {{header}}
+    <div id="back"><a href="./">← {{back}}</a></div>
+    <div class="container">
+        <form method="post">
+            {{addnewfriend}}: <input type="text" name="username" autofocus autocomplete="off"><input type="submit" value="{{send}}">
+        </form>
+        <div class="list">
+            <ul>
+                {{requestslist}}
+            </ul>
+            {{friends}}:
+            <ul>
+                {{friendslist}}
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

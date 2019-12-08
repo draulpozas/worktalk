@@ -1,0 +1,1 @@
+SELECT * FROM worktalk.friendship {{where}};

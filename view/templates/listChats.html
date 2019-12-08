@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chats</title>
+    <link rel="stylesheet" href="./../view/css/style.css">
+    <link rel="shortcut icon" href="./../view/media/icon.png" type="image/x-icon">
+    <script type="text/javascript" src="./../view/js/list.js"></script>
+</head>
+<body>
+    {{header}}
+    <div class="container">
+        <a href="./join.php">{{joinchat}}</a>&nbsp;
+        <a href="./newChat.php">{{createchat}}</a>
+        <div class="chatlist">
+            <ul id="chatlist">
+                {{items}}
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

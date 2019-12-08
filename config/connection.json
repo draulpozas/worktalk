@@ -1,0 +1,1 @@
+{"DB_USER":"worktalk", "DB_NAME":"worktalk", "DB_PASS":"randompassword", "DB_HOST":"localhost", "CONN_STRING":"mysql:dbname=worktalk;host=localhost"}
