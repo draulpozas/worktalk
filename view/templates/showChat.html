@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="chat_id" content="{{chat_id}}">
+    <title>{{chat_name}}</title>
+    <script type="text/javascript" src="./../view/js/chat.js"></script>
+    <link rel="stylesheet" href="./../view/css/style.css">
+    <link rel="shortcut icon" href="./../view/media/icon.png" type="image/x-icon">
+</head>
+<body>
+    {{header}}
+    <div id="back"><a href="./">← {{back}}</a></div>
+    <div class="container">
+    <h1>{{chat_name}}</h1>
+    <div id="content" class="chat">
+        {{items}}
+    </div>
+    <div class="footer">
+        <div id="menu">
+            ...
+            <div class="options">
+                {{sharecode}}: {{share_code}}<br>
+                {{rename_link}}
+                <a href="./leave.php?chat_id={{chat_id}}">{{leavechat}}</a>
+                {{delete_link}}<br>
+                <a href="./members.php?chat_id={{chat_id}}">{{viewparticipants}}</a>
+            </div>
+        </div>
+        <!-- <div class="input">
+            <form onsubmit="sendmsg({{chat_id}})">
+                <textarea id="input" cols="30" rows="1" autofocus autocomplete="off"></textarea>
+                <input type="submit" value="{{send}}">
+            </form>
+        </div> -->
+        <div class="input">
+            <input type="text" id="input" onkeypress="e(event)" autofocus autocomplete="off"><input type="button" value="{{send}}" onclick="sendmsg()">
+        </div>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+DELETE FROM `worktalk`.`chat` WHERE id = {{id}};

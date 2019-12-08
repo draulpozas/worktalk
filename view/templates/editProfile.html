@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit profile</title>
+    <script src="./../view/js/usercheck.js"></script>
+    <link rel="stylesheet" href="./../view/css/style.css">
+    <link rel="shortcut icon" href="./../view/media/icon.png" type="image/x-icon">
+    <script>
+        function deleteok(conf_string){
+            if (window.confirm(conf_string)) {
+                
+            }
+        }
+    </script>
+</head>
+<body>
+    {{header}}
+    <div id="back"><a href="/">← {{cancel}}</a></div>
+    <div class="container">
+    <form method="POST">
+        {{user_name}}: <input type="text" name="username" id="username" onkeyup="usercheck()" autocomplete="off" placeholder="{{leaveblank}}"><span id="usercheck" class="usercheck"></span><br>
+        Email: <input type="email" name="email" placeholder="{{leaveblank}}"><br>
+        {{password}}: <input type="password" name="passwd" id="passwd" placeholder="{{leaveblank}}" onkeyup="passwdcheck()"><br>
+        {{confirmpassword}}: <input type="password" name="passwd2" id="passwd2" onkeyup="passwdcheck()"><span id="passwdcheck" class="usercheck"></span><br>
+        {{language}}: <select name="lang">
+            {{langoptions}}
+        </select><br>
+        <a href="./profile.php">{{cancel}}</a>
+        <!-- <input type="button" onclick="" value="{{cancel}}"> -->
+        <input type="submit" value="{{save}}">
+        <a id="deleteaccount" href="./deleteAccount.php">{{deleteaccount}}</a>
+    </form>
+    </div>
+</body>
+</html>

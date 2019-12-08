@@ -1,0 +1,330 @@
+body{
+    background-color: #f3f3f3;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+body a{
+    color: #00a7a7ff;
+    text-decoration: none;
+}
+body a:hover{
+    color: #44c56eff;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1em 0;
+    
+    text-align: center;
+    overflow: visible;
+    
+    color: #44c56eff;
+    background-color: #333;
+    border-bottom: .7em solid #00a7a7ff;
+}
+
+.header>a{
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1em;
+    margin: 0;
+    position: relative;
+    border-radius: 4px;
+}
+
+.header a:hover{
+    background-color: #ffffff22;
+    transition: background-color .4s;
+    color: inherit;
+}
+
+.header .menu{
+    margin: 0;
+    padding: 1em;
+    display: inline-block;
+}
+.header .menu:hover{
+    background-color: #ffffff22;
+    transition: background-color .4s;
+    color: inherit;
+}
+.header .menu .menucontent{
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 10em;
+    text-align: left;
+    padding: .3em;
+    z-index: 100;
+}
+.header .menu:hover .menucontent{
+    display: block;
+}
+menucontent a{
+    padding: .3em;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.container{
+    text-align: center;
+    margin: 5em 2em 0;
+    line-height: 2em;
+}
+.container form input{
+    padding: .5em;
+}
+.container h1{
+    margin: auto;
+    max-width: 40%;
+    padding: .2em .5em .3em;
+    background-color: #333;
+    color: #44c56eff;
+    border: .15em solid #00a7a7ff;
+    
+    line-height: 1.3em;
+    border-radius: 2px 1.6em 1.6em;
+    box-shadow: 1px 2px 4px #00000033;
+}
+
+.chatlist ul{
+    min-width: 18em;
+    display: inline-block;
+    margin: auto;
+    position: relative;
+    left: -1.3em;
+}
+
+.chatlist li{
+    text-align: left;
+    border-radius: 4px;
+    list-style: none;
+    
+    border-width: 1px 0px;
+    border-color: #00000011;
+    border-style: solid;
+}
+
+.chatlist li:hover{
+    background-color: #00000022;
+}
+
+.chatlist li a{
+    display: block;
+    
+    text-decoration: inherit;
+    color: black;
+
+    padding: .5em;
+    padding-left: 1em;
+    margin-right: none;
+}
+.chatlist a:hover{
+    color: inherit;
+}
+
+#content {
+    max-height: 70vh;
+    overflow: auto;
+}
+.chat .msg{
+    word-break: break-word;
+    display: inline-block;
+    clear: both;
+    float: left;
+    
+    text-align: left;
+    font-weight: 100;
+    margin: 1px;
+    margin-left: -2em;
+    padding: .1em .6em .25em;
+    border-radius: 2px 1.3em 1.3em;
+    
+    line-height: 1.2em;
+/*     box-shadow: 1px 0px 1px #00000033; */
+    
+    background-color: #333;
+    color: #f3f3f3;
+}
+.msg b{
+    color: #44c56eff;
+}
+.chat .ownmsg{
+    background-color: #fff;
+    color: #333;
+    border-radius: 1.3em 2px 1.3em 1.3em;
+    float: right;
+/*     border: 1px solid #00a7a7ff; */
+}
+.chat .msg:hover{
+    background-color: #3f3f3f;
+}
+.chat .ownmsg:hover{
+    background-color: #f9f9f9;
+}
+.chat .details{
+    background-color: #0000003b;
+    padding: 0 1em;
+    border-radius: 1em;
+    font-style: italic;
+    font-size: .8em;
+}
+
+#back{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #00a7a7ff;
+    width: 10em;
+    height: 3em;
+    overflow: hidden;
+}
+
+#back a:hover{
+    background-color: #ffffff22;
+    color: inherit;
+}
+
+#back a{
+    position: relative;
+    top: 1em;
+    
+    text-decoration: none;
+    
+    margin: 0;
+    padding: 1em;
+    border-radius: 4px;
+}
+
+#deleteaccount{
+    position:absolute;
+    top: 5em;
+    right: 1em;
+}
+
+.chat{
+    margin: auto;
+    margin-bottom: 3em;
+    height: 100%;
+    max-width: 50em;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: inherit;
+}
+.footer #menu{
+    display: inline-block;
+    padding: .5em;
+    
+}
+.footer #menu:hover{
+    background-color: #00000011;
+    transition: background-color .2s;
+}
+.footer #menu:hover .options{
+    display: block;
+    position: absolute;
+}
+.footer .input{
+    display: inline-block;
+    max-width: 95vw;
+}
+input[type="text"], input[type="password"], input[type="email"]{
+    width: 18em;
+    font-size: 1em;
+    border: 0;
+    background-color: inherit;
+    border-bottom: 2px solid #00000066;
+}
+.container form select{
+    font-size: 1em;
+    border: 0;
+    background-color: inherit;
+    border-bottom: 2px solid #00000066;
+}
+select option{
+    text-transform: uppercase;
+}
+.footer .input #input{
+    width: 50vw;
+    font-size: 1.2em;
+}
+input[type="button"], input[type="submit"], button{
+    background-color: #333;
+    color: white;
+    border: 0;
+    font-size: 1.2em;
+    padding: .5em;
+    margin-left: .5em; 
+}
+input[type="button"]:hover, input[type="submit"]:hover{
+    cursor: pointer;
+    opacity: .8;
+    transition: opacity .2s;
+}
+.footer .options{
+    display: none;
+    position: absolute;
+    bottom: 2em;
+    padding: .4em;
+    margin: 0;
+    background-color: #333;
+    color: white;
+    text-align: left;
+}
+.options a{
+    text-decoration: inherit;
+    color: inherit;
+}
+.options a:hover{
+    background-color: #ffffff22;
+}
+
+
+.chat::-webkit-scrollbar{
+    width: .2em;
+}
+
+.usercheck{
+    position: absolute;
+}
+
+/* 
+.input{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: .3em;
+    width: 100%;
+}
+.input #input{
+    font-size: 1.2em;
+    width: 90%;
+    padding: .3em;
+    border: 0;
+    background-color: inherit;
+    border-bottom: 2px solid #00000066;
+}
+.input input[type="button"]{
+    font-size: 1.2em;
+    width: 8%;
+    padding: .4em 0;
+    background-color: #333;
+    color: white;
+    border: 0;
+
+}
+.input input[type="button"]:hover{
+    background-color: #00000033;
+    transition: background-color .2s;
+} */

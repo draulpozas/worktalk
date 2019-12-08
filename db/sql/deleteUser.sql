@@ -1,0 +1,1 @@
+DELETE FROM `worktalk`.`user` WHERE id = {{id}};
