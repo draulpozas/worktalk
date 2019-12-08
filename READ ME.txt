@@ -4,9 +4,11 @@ The database script is located in db/sql/init.sql
 
 Two users will be created with the following credentials:
 username: john smith
+email: johnsmith.worktalk@gmail.com
 password: iamjohnsmith
 --
 username: lina watson
+email: linawatson.worktalk@gmail.com
 password: iamlinawatson
 
 The application may be tested using those credentials or creating a new user (a valid email address is required).
