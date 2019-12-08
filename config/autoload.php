@@ -10,6 +10,6 @@ require_once __DIR__."/../view/View.php";
 require_once __DIR__."/../app/Login.php";
 require_once __DIR__."/../app/email/vendor/autoload.php";
 require_once __DIR__."/../app/email/send.php";
-define('APP_URL', '/Worktalk-DiegoPozasDW2E/app');
+define('APP_URL', 'Worktalk-DiegoPozasDW2E/app');
 
  ?>
