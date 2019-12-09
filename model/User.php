@@ -183,7 +183,7 @@ class User{
 
     /**
      * Returns a User object where the username is equal to the one given as a parameter.
-     * If no user is found for the username address, it returns false.
+     * If no user is found for the provided username, it returns false.
      */
     public static function getFromUsername($username){
         $data = Database::selectUser("WHERE username = '$username'");
