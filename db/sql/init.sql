@@ -28,7 +28,7 @@ CREATE TABLE IF NOT EXISTS `worktalk`.`chat` (
   UNIQUE INDEX `id_UNIQUE` (`id` ASC)  ,
   UNIQUE INDEX `share_code_UNIQUE` (`share_code` ASC)  )
 ENGINE = InnoDB
-AUTO_INCREMENT = 61
+AUTO_INCREMENT = 2
 DEFAULT CHARACTER SET = latin1
 COLLATE = latin1_spanish_ci;
 
@@ -45,7 +45,7 @@ CREATE TABLE IF NOT EXISTS `worktalk`.`user` (
   PRIMARY KEY (`id`),
   UNIQUE INDEX `id_UNIQUE` (`id` ASC)  )
 ENGINE = InnoDB
-AUTO_INCREMENT = 28
+AUTO_INCREMENT = 4
 DEFAULT CHARACTER SET = latin1
 COLLATE = latin1_spanish_ci;
 
